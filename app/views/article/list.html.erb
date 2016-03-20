@@ -1,0 +1,15 @@
+<h1>List all my articles</h1>
+
+<% for i in 0..@list.length-1 %>
+<div class="article_container">
+  <p class="article_title" >Title: <%=@list[i][0]%></p>
+
+  <div class="div_align_right">
+    <p>Date: <%=@list[i][2]%></p>
+  </div>
+  <div class="div_align_left">
+    <p class="article_author">Author: <%=@list[i][1]%></p>
+  </div>
+  <p>Description: <%=@list[i][3]%></p>
+</div>
+<% end %>
