@@ -35,8 +35,13 @@ class ArticleController < ApplicationController
    end
 
    def application
-   
-  end
+
+   end
+
+   def pdf
+     @fullname = params[:full_name]
+     @birthdate =  params[:date_birth]
+   end
 
    def show
      # here i will see my article detail page

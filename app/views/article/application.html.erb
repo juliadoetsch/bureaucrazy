@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-
-<html>
-<body>
-
-<form>
+<form action="pdf" method="post">
+  
   Move in Date:
   <input type="Date" name="movegin_date">
   <br>
@@ -25,12 +21,12 @@ Old Postal Code:
 <br>
 
 
-Full Name:
-<input type="text" name="full_name">
+* Full Name:
+<input type="text" name="full_name" required>
 <br>
 
 Date of Birth:
-<input type="date" name="date_birth">
+<input type="date" name="date_birth" required>
 <br>
 
 Nationality:
@@ -93,44 +89,10 @@ Expired Date(passport):
 <input type="Date" name="expired_Date">
 <br>
 
-
-<%=form_tag do %>
-
-<%= text_field(:articles,:title) %>
-
-<%= label_tag(:title,"Title") %>
-<!-- the label only to show you the way and this note work only on HTML -->
-<%= text_field_tag(:title,"Default Text",:class => "textfield") %>
-<br>
-<%=check_box_tag(:berlin) %>
-<%= label_tag(:berlin,"I Live in berlin") %>
-
-<%= check_box_tag(:germany) %>
-<%= label_tag(:germany,"that is in germany") %>
-
-<br / />
-
-<%= radio_button_tag(:age,"child") %>
-<%= label_tag(:age_child,"I am younger than 21") %>
-
-<%= radio_button_tag(:age,"adult") %>
-<%= label_tag(:age_adult,"I am over 21") %>
-
-<%= radio_button_tag(:age,"old") %>
-<%= label_tag(:age_old,"I am over 90") %>
-
-<%= submit_tag("save") %>
-
-	<% end %>
-
 save:
-<input type="submit" name="submit">
+<input type="submit" value="Convert to PDF">
 <br>
 
 
 
 </form>
-
-</body>
-</html>
-
