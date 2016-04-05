@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<form>
+  Move in Date:
+  <input type="Date" name="movegin_date">
+  <br>
+
+  New Address:
+  <input type="text" name="new_address">
+<br>
+
+New Postal Code:
+<input type="text" name="new_postal_code">
+<br>
+
+Old Address:
+<input type="text" name="old_address">
+<br>
+
+Old Postal Code:
+<input type="text" name="Old_postal_code">
+<br>
+
+
+Full Name:
+<input type="text" name="full_name">
+<br>
+
+Date of Birth:
+<input type="date" name="date_birth">
+<br>
+
+Nationality:
+<input type="text" name="nationality">
+<br>
+
+Religion:
+<input type="text" name="religiony">
+<br>
+
+Marital Status:
+<input type="text" name="Marital_Status">
+<br>
+
+Date of Marriage:
+<input type="Date" name="Date_of_Marriage">
+<br>
+
+
+ID Nr:
+<input type="text" name="id_nr">
+<br>
+
+
+Sirial Number(ID):
+<input type="text" name="Sirial_number">
+<br>
+
+
+Place of Issue(ID):
+<input type="text" name="Place_issue">
+<br>
+
+
+
+Date of Issue(ID):
+<input type="Date" name="Date_issue">
+<br>
+
+Expired Date(ID):
+<input type="Date" name="expired_Date">
+<br>
+
+Sirial Number(passport):
+<input type="text" name="Sirial_number">
+<br>
+
+
+Place of Issue(passport):
+<input type="text" name="Place_issue">
+<br>
+
+
+
+Date of Issue(passport):
+<input type="Date" name="Date_issue">
+<br>
+
+Expired Date(passport):
+<input type="Date" name="expired_Date">
+<br>
+
+
+<%=form_tag do %>
+
+<%= text_field(:articles,:title) %>
+
+<%= label_tag(:title,"Title") %>
+<!-- the label only to show you the way and this note work only on HTML -->
+<%= text_field_tag(:title,"Default Text",:class => "textfield") %>
+<br>
+<%=check_box_tag(:berlin) %>
+<%= label_tag(:berlin,"I Live in berlin") %>
+
+<%= check_box_tag(:germany) %>
+<%= label_tag(:germany,"that is in germany") %>
+
+<br / />
+
+<%= radio_button_tag(:age,"child") %>
+<%= label_tag(:age_child,"I am younger than 21") %>
+
+<%= radio_button_tag(:age,"adult") %>
+<%= label_tag(:age_adult,"I am over 21") %>
+
+<%= radio_button_tag(:age,"old") %>
+<%= label_tag(:age_old,"I am over 90") %>
+
+<%= submit_tag("save") %>
+
+	<% end %>
+
+save:
+<input type="submit" name="submit">
+<br>
+
+
+
+</form>
+
+</body>
+</html>
+

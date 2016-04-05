@@ -1,0 +1,28 @@
+<%=form_tag do %>
+
+<%= text_field(:articles,:title) %>
+
+<%= label_tag(:title,"Title") %>
+<!-- the label only to show you the way and this note work only on HTML -->
+<%= text_field_tag(:title,"Default Text",:class => "textfield") %>
+<br>
+<%=check_box_tag(:berlin) %>
+<%= label_tag(:berlin,"I Live in berlin") %>
+
+<%= check_box_tag(:germany) %>
+<%= label_tag(:germany,"that is in germany") %>
+
+<br / />
+
+<%= radio_button_tag(:age,"child") %>
+<%= label_tag(:age_child,"I am younger than 21") %>
+
+<%= radio_button_tag(:age,"adult") %>
+<%= label_tag(:age_adult,"I am over 21") %>
+
+<%= radio_button_tag(:age,"old") %>
+<%= label_tag(:age_old,"I am over 90") %>
+
+<%= submit_tag("save") %>
+
+	<% end %>

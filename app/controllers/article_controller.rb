@@ -3,6 +3,7 @@ class ArticleController < ApplicationController
   def list
     #here i will list all my articles
 
+
     @ArticleTitle = "Trump ends wild day on campaign trail by calling for protesters' arrests"
     @ArticleAuthor = 'Jeremy Diamond '
     @ArticleDate = "13th December 2016"
@@ -33,12 +34,18 @@ class ArticleController < ApplicationController
     #render :action => 'list'
    end
 
+   def application
+   
+  end
+
    def show
      # here i will see my article detail page
    end
 
    def new
-     # here i create a new article
+    @article = Article.new
+
+     # here i create a new article and to save the date base
    end
 
    def edit
